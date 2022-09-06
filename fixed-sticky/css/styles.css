@@ -1,0 +1,54 @@
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+header {
+  height: 50px;
+  background-color: blueviolet;
+  color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: grey;
+  width: 100px;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+
+.adv {
+  color: red;
+  text-decoration: underline;
+  background-color: yellow;
+  position: sticky;
+  top: 60px;
+}
+
+/* Se invece voglio l'header all'interno del container, solo relativo al container?
+Con fixed non posso, non è come absolute.
+Devo usare sticky, cioè static finché non scrolla fuori - poi diventa
+fixed ma con le stesse dimensioni.
+
+Esempio:
+header {
+  height: 50px;
+  background-color: blueviolet;
+  color: white;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 10px;
+}
+
+in questo caso devo togliere anche il margin dal container
+*/

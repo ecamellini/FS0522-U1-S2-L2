@@ -1,0 +1,51 @@
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 50px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid grey;
+  position: absolute;
+}
+
+.box:nth-child(1) {
+  background-color: green;
+  z-index: 5;
+}
+
+.box:nth-child(2) {
+  background-color: red;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+.box:nth-child(2):hover {
+  z-index: 6;
+  cursor: pointer;
+}
+
+.box:nth-child(3) {
+  background-color: blue;
+  top: 100px;
+  left: 100px;
+  z-index: 2;
+}
+
+.box:nth-child(4) {
+  background-color: pink;
+  top: 150px;
+  left: 150px;
+  z-index: 4;
+}
+
+.box:nth-child(5) {
+  background-color: orange;
+  top: 200px;
+  left: 200px;
+  z-index: 3;
+}

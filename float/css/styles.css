@@ -1,0 +1,43 @@
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.text-image, .text-p {
+  display: inline;
+}
+
+.text-image {
+  margin-right: 10px;
+}
+
+.text-image:first-of-type {
+  float: left;
+}
+
+.text-image:last-of-type {
+  float: right;
+}
+
+.box {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+#footer {
+  background-color: blueviolet;
+  height: 200px;
+  /* Clear left: vatti a posizionare sotto a tutti gli elementi float left che ci sono sopra di te */
+  /* clear: left; */
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  visibility: hidden;
+}

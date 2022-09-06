@@ -1,0 +1,33 @@
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+section {
+  display: inline-block;
+  width: 300px;
+}
+
+.strip {
+  background-color: #aaa;
+  margin-bottom: 10px;
+  text-align: center;
+  height: 50px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.strip:hover > .tooltip {
+  display: block;
+  position: absolute;
+  right: -90px;
+  bottom: 5px;
+}
